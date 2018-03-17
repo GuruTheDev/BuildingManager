@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Building Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="Created by Awesomechaps" name="Awesomechaps" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!--Morris Chart CSS -->
+    <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="assets/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Top Bar Start -->
+        <div class="topbar">
+
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <a href="index.html" class="logo">
+                    <span>
+                        <img src="assets/images/logo.png" alt="">
+                    </span>
+                    <i>
+                        <img src="assets/images/logo_sm.png" alt="">
+                    </i>
+                </a>
+            </div>
+
+            <nav class="navbar-custom">
+
+                <ul class="list-unstyled topbar-right-menu float-right mb-0">
+
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                            aria-expanded="false">
+                            <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
+                            <span class="ml-1">Username
+                                <i class="mdi mdi-chevron-down"></i>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                            <!-- item-->
+                            <div class="dropdown-item noti-title">
+                                <h6 class="text-overflow m-0">Welcome !</h6>
+                            </div>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="ti-power-off"></i>
+                                <span>Logout</span>
+                            </a>
+
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="list-inline menu-left mb-0">
+                    <li class="float-left">
+                        <button class="button-menu-mobile open-left waves-light waves-effect">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+        <!-- Top Bar End -->
+
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="left side-menu">
+            <div class="user-details">
+                <div class="pull-left">
+                    <img src="assets/images/users/avatar-1.jpg" alt="" class="thumb-md rounded-circle">
+                </div>
+                <div class="user-info">
+                    <a href="#">Username</a>
+                    <p class="text-muted m-0">Administrator</p>
+                </div>
+            </div>
+
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+                <!-- Left Menu Start -->
+                <ul class="metismenu" id="side-menu">
+                    <li class="menu-title">Navigation</li>
+
+                    <li>
+                        <a href="index.html">
+                            <i class="ti-home"></i>
+                            <span> Home </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0);">
+                            <i class="ti-user"></i>
+                            <span> Users </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li>
+                                <a href="create_user.html">Add User</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0);">
+                            <i class="ti-hummer"></i>
+                            <span> Contractors </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li>
+                                <a href="create_contractor.html">Add Contractor</a>
+                            </li>
+                            <li>
+                                <a href="list_contractor.html">View All Contractor</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0);">
+                            <i class="ti-clipboard"></i>
+                            <span> Cases </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li>
+                                <a href="create_case.html">Raise Case</a>
+                            </li>
+                            <li>
+                                <a href="list_cases.html">View All Case</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+            <!-- Sidebar -->
+            <div class="clearfix"></div>
+
+        </div>
+        <!-- Left Sidebar End -->
+
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="header-title m-t-0 m-b-20">Welcome !</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card-box widget-inline">
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <div class="widget-inline-box text-center">
+                                            <h3 class="m-t-10">
+                                                <i class="text-primary mdi mdi-access-point-network"></i>
+                                                <b>124</b>
+                                            </h3>
+                                            <p class="text-muted">Total Users</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-sm-12">
+                                        <div class="widget-inline-box text-center">
+                                            <h3 class="m-t-10">
+                                                <i class="text-custom mdi mdi-airplay"></i>
+                                                <b>1045</b>
+                                            </h3>
+                                            <p class="text-muted">Total Contractors</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-sm-12">
+                                        <div class="widget-inline-box text-center">
+                                            <h3 class="m-t-10">
+                                                <i class="text-info mdi mdi-black-mesa"></i>
+                                                <b>54</b>
+                                            </h3>
+                                            <p class="text-muted">Total Resolved Cases</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-sm-12">
+                                        <div class="widget-inline-box text-center b-0">
+                                            <h3 class="m-t-10">
+                                                <i class="text-danger mdi mdi-cellphone-link"></i>
+                                                <b>10</b>
+                                            </h3>
+                                            <p class="text-muted">Total Unresolved Cases</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end row -->
+
+
+
+
+
+
+
+                </div>
+                <!-- container -->
+
+
+                <div class="footer">
+                    <div class="pull-right hide-phone">
+                        Project Completed
+                        <strong class="text-custom">57%</strong>.
+                    </div>
+                    <div>
+                        <strong>Simple Admin</strong> - Copyright © 2017 - 2018
+                    </div>
+                </div>
+
+            </div>
+            <!-- content -->
+
+        </div>
+
+
+        <!-- ============================================================== -->
+        <!-- End Right content here -->
+        <!-- ============================================================== -->
+
+
+    </div>
+    <!-- END wrapper -->
+
+
+
+    <!-- jQuery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/waves.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+
+    <!--Morris Chart-->
+    <script src="assets/plugins/morris/morris.min.js"></script>
+    <script src="assets/plugins/raphael/raphael-min.js"></script>
+
+    <!-- Dashboard init -->
+    <script src="assets/pages/jquery.dashboard.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/jquery.core.js"></script>
+    <script src="assets/js/jquery.app.js"></script>
+
+</body>
+
+</html>
